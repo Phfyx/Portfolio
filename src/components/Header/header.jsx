@@ -12,7 +12,7 @@ function Header() {
                         <a href="https://github.com/Phfyx"><img src="/static/LogoGitHub.png" alt="Logo GitHub" /></a> 
                     </li>
                     <li className='w-10'>
-                    <a href="https://www.linkedin.com/in/mohamedbenomar/"><img src="/static/LinkedInlogo.png" alt="Logo LinkedIn" /></a> 
+                    <a href="https://www.linkedin.com/in/mohamedbenomar/"><img src="/static/Linkedinlogo.png" alt="Logo LinkedIn" /></a> 
                     </li>
                     <li className='w-10'>
                        <a href={Pdf}><img src="/static/Cvlogo.png" alt="Logo CV" /></a> 
