@@ -1,12 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import projects from "../../assets/data.js";
+import data from "../../assets/data.js";
 import Message from "../Message/message.jsx";
 
 
 
 function Projet() {
-
+const projects = data.projects;
   const [project, setProject] = useState(null);
 
   return (
