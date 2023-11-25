@@ -11,6 +11,7 @@ function App() {
       <div className="container flex flex-col md:flex-row p-20">
         <Projet />
       </div>
+      <span> W.I.P </span>
     </div>  
   )
 }
