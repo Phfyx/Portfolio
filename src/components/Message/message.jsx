@@ -1,9 +1,14 @@
-import React from "react";
+import {useEffect} from "react";
 import data from "../../assets/data.js";
+import { motion, animate} from "framer-motion"
 
 function Message(props) {
   const technos = data.technos;
-  console.log(technos)
+
+useEffect(() => {
+    animate("section.aboutme", { x: [0, 100] }, { type: "spring" })
+})
+
 if (props.project === null){
   return (
     <>
@@ -31,7 +36,7 @@ if (props.project === null){
   return (
     <>
       
-        <section className="aboutme p-8">
+        <section className="aboutme p-8 mr-48">
           <h1 className="text-8xl mb-8">{props.project.name}</h1>
           <p className="pl-4 border-l mb-8">
             {props.project.description}
