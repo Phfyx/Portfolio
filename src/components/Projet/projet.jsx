@@ -1,33 +1,34 @@
 import React from "react";
-import { useState } from "react";
 import data from "../../assets/data.js";
-import Message from "../Message/message.jsx";
-import { CSSTransition } from 'react-transition-group';
-import './projet.css';
-
-
+import "./projet.css";
+import { useDispatch, useSelector } from "react-redux";
+import { setProjet } from "../../state/Slice/Slice.js";
 
 function Projet() {
-const projects = data.projects;
-  const [project, setProject] = useState(null);
-
+  const projects = data.projects;
+  const dispatch = useDispatch();
+  const project = useSelector((state) => state.project.value);
 
   return (
-    <>  
-          <Message project={project}/>
-        <section className=" p-8">
-          <h2 className="text-4xl mb-8">Mes projects</h2>
-          
-          { projects.map((project) => (
-            <article key={project.id} className="mb-4">
-              <a className= "hover: cursor-pointer" onClick={()=> setProject(project)}><h3 className="" >{project.name}</h3></a>
-              <p className="text-grey-text">{project.desc}</p>
-            </article>
+    <>
+      <section className="project p-8 basis-5/12">
+        <h2 className="text-4xl mb-8">Mes projets</h2>
+        <div className="project-wrapper">
+          <div className="wrapper">
+          {projects.map((project) => (
+              <a
+                className="hover:cursor-pointer bg-grey mb-4"
+                onClick={() => dispatch(setProjet(project))}
+              >
+                <h3 className="project-title">{project.name}</h3>
+              </a>
+      
+            
           ))}
-                
-    
-        </section>
-    
+          </div>
+          
+        </div>
+      </section>
     </>
   );
 }

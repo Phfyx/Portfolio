@@ -1,21 +1,27 @@
 import React from 'react';
 import Pdf from '../../assets/MohamedBenomar.pdf';
+import { useSelector, useDispatch } from 'react-redux';
+import { resetProjet } from '../../state/Slice/Slice';
 
 
 function Header() {
+
+    const dispatch = useDispatch();
     return (
         <>
             <nav className='NavBar flex justify-between'>
-                <img src="" alt="logo" />
-                <ul className='flex justify-around p-8 w-1/3'>
-                    <li className='w-10'>
-                        <a href="https://github.com/Phfyx"><img src="/static/LogoGitHub.png" alt="Logo GitHub" /></a> 
+                <img onClick={() => dispatch(resetProjet())} src="/static/Logo.svg" alt="logo" className='w-36 cursor-pointer'/>
+                <ul className='flex'>
+                    <li>
+                        <a href="https://github.com/Phfyx" className='flex ml-8'>
+                            <img src="/static/LogoGitHub.png" alt="Logo GitHub" className='w-10'/>
+                        </a> 
                     </li>
-                    <li className='w-10'>
-                    <a href="https://www.linkedin.com/in/mohamedbenomar/"><img src="/static/Linkedinlogo.png" alt="Logo LinkedIn" /></a> 
+                    <li>
+                    <a href="https://www.linkedin.com/in/mohamedbenomar/" className='flex ml-8'><img src="/static/Linkedinlogo.png" alt="Logo LinkedIn" className='w-10'/></a> 
                     </li>
-                    <li className='w-10'>
-                       <a href={Pdf}><img src="/static/Cvlogo.png" alt="Logo CV" /></a> 
+                    <li>
+                       <a href={Pdf} className='flex ml-8'><img src="/static/Cvlogo.png" alt="Logo CV" className='w-10'/></a> 
                     </li>
                 </ul>
             </nav>
