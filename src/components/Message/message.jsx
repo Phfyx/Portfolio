@@ -39,7 +39,7 @@ if (project === null){
   return (
     <>
       
-        <section className="aboutme p-8 mr-48 w-3/5">
+        <section className="aboutme relative basis-7/12 p-8 mr-48">
           <h1 className="text-8xl mb-8">{project.name}</h1>
           <p className="pl-4 border-l mb-8">
             {project.description}

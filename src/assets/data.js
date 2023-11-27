@@ -2,7 +2,7 @@ const projects = [
     {
         id:1,
         name: "Repair Cafe",
-        description: "Creation d'une app web pour une association de repair cafe Luxembourgeoise afin de pouvoir voir les prochains evenements et s'inscrire a ceux-ci pour les réparateurs bénevoles",
+        description: "Creation d'une app web pour une association de repair cafe Luxembourgeoise afin de pouvoir voir les prochains evenements et s'inscrire a ceux-ci pour les réparateurs bénevoles.",
         technologies: ["HTML", "CSS", "JavaScript"],
         image: "project1.png",
         link_msg: "Voir le site",
@@ -10,8 +10,8 @@ const projects = [
     },
     {
         id:2,
-        name: "Visualiseur d'algorithme de tri",
-        description: "Visualiseur d'algorithme de tri en React fait en suivant le tutoriel de Clement Mihailescu",
+        name: "Visualiseur",
+        description: "Visualiseur d'algorithme de tri en React fait en suivant le tutoriel de Clement Mihailescu.",
         technologies: ["React", "JavaScript"],
         image: "project2.png",
         link_msg: "Voir le repo",
