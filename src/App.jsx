@@ -3,6 +3,7 @@ import Header from "./components/Header/header";
 import Projet from "./components/Projet/projet";
 import Message from "./components/Message/message";
 import Footer from "./components/Footer/footer";
+import Technos from "./components/Technos/technos";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Message />
           <Projet />
         </div>
+        <Technos />
       </div>
       <Footer />
     </div>
