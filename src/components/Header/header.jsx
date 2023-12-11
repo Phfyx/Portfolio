@@ -11,7 +11,7 @@ function Header() {
         <>
             <nav className='NavBar flex justify-between'>
                 <img onClick={() => dispatch(resetProjet())} src="/static/Logo.svg" alt="logo" className='w-36 cursor-pointer'/>
-                <ul className='flex'>
+                <ul className='hidden md:flex'>
                     <li>
                         <a href="https://github.com/Phfyx" className='flex ml-8'>
                             <img src="/static/LogoGitHub.png" alt="Logo GitHub" className='w-10'/>

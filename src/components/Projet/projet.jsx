@@ -12,7 +12,7 @@ function Projet() {
   return (
     <>
       <section className="project p-8 basis-5/12">
-        <h2 className="text-4xl mb-8">Mes projets</h2>
+        <h2 className="text-4xl md:text-8xl mb-8">Mes projets</h2>
         <div className="project-wrapper">
           <div className="wrapper">
           {projects.map((project) => (
