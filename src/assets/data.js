@@ -19,9 +19,40 @@ const projects = [
     }
 ];
 
-const technos = {
-    learned: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express.js", "MongoDB", "Git", "GitHub"],
-    currently_learning: ["Java", "Angular"]
-}
+const technos = [
+    {
+        name: "Javascript",
+        image:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+    },
+    {
+        name: "NodeJS",
+        image:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+    },
+    {
+        name: "React",
+        image:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+    },
+    {
+        name: "HTML",
+        image:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+    },
+    {
+        name: "CSS",
+        image:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+    },
+    {
+        name: "Git",
+        image:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+    },
+    {
+        name: "Github",
+        image:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+    },
+    {
+        name: "Visual Studio Code",
+        image:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+    }
+ 
+]
 
 export default {projects, technos};
