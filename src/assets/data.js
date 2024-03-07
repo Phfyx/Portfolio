@@ -16,6 +16,16 @@ const projects = [
         image: "project2.png",
         link_msg: "Voir le repo",
         link: "https://github.com/Phfyx/sorting-visualizer"
+    },
+    {
+        id:3,
+        name: "Next Js job board",
+        description: "Création d'un Job Board grâce avec NextJs pour apprendre les nouveautés de ce dernier telles que les serveurs actions et les hooks de react useFormState et useFormStatus",
+        technologies: ["React", "JavaScript", "NextJs", "tailwind"],
+        image: "project2.png",
+        link_msg: "Voir le repo",
+        github_link: "https://github.com/Phfyx/NextJs-jobboard",
+        site_link: "https://next-js-jobboard.vercel.app/"
     }
 ];
 

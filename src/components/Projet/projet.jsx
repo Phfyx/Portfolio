@@ -15,18 +15,15 @@ function Projet() {
         <h2 className="text-4xl md:text-8xl mb-8">Mes projets</h2>
         <div className="project-wrapper">
           <div className="wrapper">
-          {projects.map((project) => (
+            {projects.map((project) => (
               <a
                 className="hover:cursor-pointer bg-grey mb-4"
                 onClick={() => dispatch(setProjet(project))}
               >
                 <h3 className="project-title">{project.name}</h3>
               </a>
-      
-            
-          ))}
+            ))}
           </div>
-          
         </div>
       </section>
     </>
