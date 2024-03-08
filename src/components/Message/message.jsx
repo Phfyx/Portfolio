@@ -34,8 +34,7 @@ function Message() {
           <p className="text-base pl-4 border-l mb-8 md:text-xl">
             {project.description}
           </p>
-          <h2>Fait avec :</h2>
-          
+
           <div className="justify-between flex mt-4">
             <div>
               <a className="mb-8 underline font-bold" href={project.site_link}>
@@ -43,7 +42,10 @@ function Message() {
               </a>
             </div>
             <div>
-              <a className="mb-8 underline font-bold" href={project.github_link}>
+              <a
+                className="mb-8 underline font-bold"
+                href={project.github_link}
+              >
                 Voir le repo
               </a>
             </div>
