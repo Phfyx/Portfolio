@@ -4,10 +4,10 @@ import "./projet.css";
 import { useDispatch, useSelector } from "react-redux";
 import { setProjet } from "../../state/Slice/Slice.js";
 
+
 function Projet() {
   const projects = data.projects;
   const dispatch = useDispatch();
-  const project = useSelector((state) => state.project.value);
 
   return (
     <>
