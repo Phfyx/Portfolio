@@ -2,7 +2,7 @@ import Pdf from '../../assets/MohamedBenomar.pdf';
 
 function Footer() {
   return (
-    <ul className="flex pb-8 md:hidden">
+    <ul className="flex pb-8 md:hidden justify-between">
       <li>
         <a href="https://github.com/Phfyx" className="flex ml-8">
           <img

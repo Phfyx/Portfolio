@@ -13,13 +13,13 @@ function App() {
     >
       <div className="inner-container flex flex-col justify-between w-10/12 md:w-screen md:p-20">
         <Header />
-        <div className="projects flex flex-col md:flex-row">
+        <div className="projects flex flex-col lg:flex-row">
           <Message />
           <Projet />
         </div>
         <Technos />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }
